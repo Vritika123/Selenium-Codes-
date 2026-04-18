@@ -1,0 +1,8 @@
+[    4154ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://www.spicejet.com/:0
+[    5644ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ https://www.spicejet.com/:0
+[    5703ms] [WARNING] 🚀 container.buildInfo.environment is deprecated.Please use `container.environment.stage` instead @ https://www.spicejet.com/vendorsfec05bd9d8196b355e2d.chunk.js:207
+[    5704ms] [WARNING] 🚀 container.buildInfo.environment is deprecated.Please use `container.environment.stage` instead @ https://www.spicejet.com/vendorsfec05bd9d8196b355e2d.chunk.js:207
+[    6060ms] Uncaught (in promise) TypeError: Cannot read properties of null (reading 'toString')
+    at source (https://assets.adobedtm.com/537dbdb6fad9/0ee804a032d6/launch-128555ff1d51.min.js:11:5051)
+    at <anonymous> (https://assets.adobedtm.com/537dbdb6fad9/0ee804a032d6/launch-128555ff1d51.min.js:4:17764)
+[    6274ms] [ERROR] Failed to load resource: the server responded with a status of 402 (Payment Required) @ https://bam.eu01.nr-data.net/1/NRJS-f1b543bfb33f40890d4?a=94352739&sa=1&v=1184.ab39b52&t=Unnamed%20Transaction&rst=5576&ck=1&ref=https://www.spicejet.com/&be=175&fe=5477&dc=4093&af=err,xhr,stn,ins&perf=%7B%22timing%22:%7B%22of%22:1776430560462,%22n%22:0,%22f%22:3,%22dn%22:5,%22dne%22:26,%22c%22:27,%22s%22:61,%22ce%22:98,%22rq%22:98,%22rp%22:135,%22rpe%22:169,%22dl%22:139,%22di%22:4093,%22ds%22:4093,%22de%22:4093,%22dc%22:5477,%22l%22:5477,%22le%22:5483%7D,%22navigation%22:%7B%7D%7D&fp=1996&fcp=1996&jsonp=NREUM.setToken:0
