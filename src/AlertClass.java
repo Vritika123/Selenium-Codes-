@@ -1,38 +1,32 @@
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-
-
-
 public class AlertClass {
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
 
+		String text = "John";
 
+		WebDriver driver = new ChromeDriver();
 
-String text="John";
+		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 
-WebDriver driver = new ChromeDriver();
+		driver.findElement(By.id("name")).sendKeys(text);
 
-driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		driver.findElement(By.cssSelector("[id='alertbtn']")).click();
 
-driver.findElement(By.id("name")).sendKeys(text);
+		System.out.println(driver.switchTo().alert().getText());
 
-driver.findElement(By.cssSelector("[id='alertbtn']")).click();
+		driver.switchTo().alert().accept();
 
-System.out.println(driver.switchTo().alert().getText());
+		driver.findElement(By.id("confirmbtn")).click();
 
-driver.switchTo().alert().accept();
+		System.out.println(driver.switchTo().alert().getText());
 
-driver.findElement(By.id("confirmbtn")).click();
+		driver.switchTo().alert().dismiss();
 
-System.out.println(driver.switchTo().alert().getText());
-
-driver.switchTo().alert().dismiss();
-
-}
+	}
 
 }

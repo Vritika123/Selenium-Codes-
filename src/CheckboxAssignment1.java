@@ -6,19 +6,14 @@ import org.testng.Assert;
 public class CheckboxAssignment1 {
 
 	public static void main(String[] args) {
-		
+
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		driver.findElement(By.id("checkBoxOption1")).click();
 		Assert.assertTrue(driver.findElement(By.id("checkBoxOption1")).isSelected());
 		driver.findElement(By.id("checkBoxOption1")).click();
 		Assert.assertFalse(driver.findElement(By.id("checkBoxOption1")).isSelected());
-		
-		 System.out.println( driver.findElement(By.cssSelector("input[type='checkbox']")).getSize());
-		
-		
-	  
-		
+		System.out.println(driver.findElement(By.cssSelector("input[type='checkbox']")).getSize());
 
 	}
 
